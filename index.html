@@ -4,28 +4,60 @@
         <title>Project: Recipe book</title>
         <meta charset="utf-8">
         <style>
+        
+        
+        .class {
+            text-align: center;
+        }
+        p{
+        color: #996515;
+        }
+        h1{
+            color: green;
+            font-size:1.8em;
+            line-height:3;
+        }
+        h2{
+            color: darkred;
+            font-size: 1.4em;
+        }
+        li{
+            color: #996515;
+            list-style-position: inside;
+            padding-right: 50px;
+        }
+        table{
+            color: grey;
+            padding-left: 140px;
+            
+        }
+        #big-table{
+            padding-left: 0px;
+            padding-right: 45px;
+            
+        }
         </style>
     </head>
     <body>
+        
        
-        <h1>Richard Li's Recipe Book</h1>
+        <h1 class = "class">Richard Li's Recipe Book</h1>
+        <h2 class = "class">Contents:</h2>
         
-        <h2>Contents:</h2>
-        
-        <ol>
+        <ol class = "class">
             <li><a href="#1">Recipe #1</a></li>
             <li><a href="#2">Recipe #2</a></li>
             <li><a href="#3">Recipe #3</a></li>
         </ol>
+        <br>
+        <h2 class = "class" id="1">Recipe #1</h2>
         
-        <h2 id="1">Recipe #1</h2>
-        
-        <ul>
+        <ul class = "class">
             <li>Time: 25 minutes</li>
             <li>Serves: 1</li>
         </ul>
         
-        <table>
+        <table class = "class">
             <thead>
                 <tr>
                     <th>Ingredients</th>
@@ -37,27 +69,26 @@
             <td>Leftover pizza</td>
             <td>1</td>
             </tr>
-            <tr><td>Oven</td></tr>
+            <tr><td>Oven</td><td>1</tr>
+            
+                <td>
+            </td>    
+            
             </tbody>
         </table>
         
-        <p><strong>Step 1:</strong> Preheat 10 minutes.</p>
-        <p><strong>Step 2:</strong> Add leftover pizza and continue heating for 15 minutes.
+        <p class = "class"><strong>Step 1:</strong> Preheat 10 minutes.</p>
+        <p class = "class"><strong>Step 2:</strong> Add leftover pizza and continue heating for 15 minutes.
 </p>
+        <br>
+        <h2  class = "class" id="2">Recipe #2</h2>
         
-    <p><em>Source: <a href="http://docs.google.com">Some recipes websites</a></em></p>
-    <ol>
-            
-        </ol>
-        
-        <h2 id="2">Recipe #2</h2>
-        
-        <ul>
+        <ul class = "class">
             <li>Time: 10 seconds</li>
             <li>Serves: 1</li>
         </ul>
         
-        <table>
+        <table class = "class">
             <thead>
                 <tr>
                     <th>Ingredients</th>
@@ -68,49 +99,38 @@
             <td>Bag of chips</td>
             <td>1</td>
             <tr><td>Bowl (optional)</td><td>1</tr>
+            
             </tbody>
         </table>
         
-        <p><strong>Step 1:</strong> Open bag</p>
-        <p><strong>Step 2:</strong> Pour into bowl (optional)</p>
+        <p class = "class"><strong>Step 1:</strong> Open bag</p>
+        <p class = "class"><strong>Step 2:</strong> Pour into bowl (optional)</p>
         
-    <p><em>Source: <a href="http://slides.google.com">Some recipes websites</a></em></p>
-    
-        <h2 id="3">Recipe #3</h2>
+    <br>
+        <h2 id="3" class = "class">Recipe #3</h2>
         
-        <ul>
+        <ul class = "class">
             <li>Time: 48 years</li>
             <li>Serves: 1</li>
         </ul>
         
-        <table>
+        <table class = "class" id = "big-table">
             <thead>
-                
                     <th>Ingredients</th>
                     <th>Quantity</th>
-                
             </thead>
             <tbody>
             <tr>
             <td>4 Gallon Barrel</td>
             <td>1</td></tr>
             <tr><td>1 Gallon Jug</td><td>3</tr>
-            <tr>
-                <td>
-                Tubing, hyderometer, cork, airlocks, and more wine distilling tools
-                </td>
-                <td>NaN
-        
-        <td>
-        
-            </tr>
-            <tr><td>Grapes, filtered water, yeast, sugar.<td><td>NAN</td></tr> 
+            <tr><td>Tubing, hyderometer, cork, airlocks, and more wine distilling tools</td><td>NaN<td></tr>
+            <tr><td>Grapes, filtered water, yeast, sugar.<td><td>NaN</td></tr> 
             </tbody>
         </table>
         
-        <p><strong>Step 1:</strong> Crush grapes put in bucket etc.</p>
-        <p><strong>Step 2:</strong> Run into bottles store wine etc. age for 48 years</p>
+        <p class = "class"><strong>Step 1:</strong> Crush grapes put in bucket etc.</p>
+        <p class = "class"><strong>Step 2:</strong> Run into bottles store wine etc. age for 48 years</p>
         
-    <p><em>Source: <a href="http://slides.google.com">Some recipes websites</a></em></p>
     </body>
 </html>
