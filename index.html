@@ -4,6 +4,13 @@
         <title>Project: Recipe book</title>
         <meta charset="utf-8">
         <style>
+        #disclaimer{
+            position:fixed;
+            bottom:0;
+            font-size:0.9em
+            color: black;
+            text-align: center;
+            }    
         #pizza{
             display: block;
             border: 20px ridge saddlebrown;
@@ -20,7 +27,16 @@
             margin-right: auto;
             margin-top: 20px;
             margin-bottom: 20px;
-            width: 20%
+            width: 20%;
+       }    
+       #wine{
+           display: block;
+            border: 20px ridge saddlebrown;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 20%;
        }    
        #color {
             background: #fff0cc;
@@ -59,12 +75,16 @@
             padding-right:1050px;
             font-size: 1.1em;
         }
+        #top{
+            position: fixed;
+            top:0;
+        }    
         </style>
     </head>
     <body>
         <div id = "color">
        
-        <h1 class = "class">Richard Li's Recipe Book</h1>
+        <h1 class = "class" id = "top">Richard Li's Recipe Book</h1>
         <h2 class = "class">Contents:</h2>
         
         <ol class = "class">
@@ -131,7 +151,7 @@
         
     <br>
         <h2 id="3" class = "class">Recipe #3</h2>
-        
+        <img id = "wine" src = "https://toppng.com/uploads/preview/wine-bottle-11532767552ei5jy6txvr.png">
         <ul class = "class">
             <li>Time: 48 years</li>
             <li>Serves: 1</li>
@@ -157,6 +177,7 @@
             <br>
             <br>
             <br>
+            <p id = "disclaimer"> I do not own any images used in this webpage. </p>
             <br>
             <br>
         </div>
