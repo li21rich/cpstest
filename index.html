@@ -116,6 +116,11 @@
            font-size: 0px;
            
             }
+            #clicker{
+                position: fixed;
+                left: 150px;
+                top: 666px;
+            }    
         </style>
     </head>
     <body>
@@ -133,8 +138,9 @@
             </div>
             <a href="#" onClick="return false;" class = "class" id = "button">
             <span class = "hide">WWW</span>&lt;Fake Button&gt;<span class = "hide">WWW</span>
-             
-           </a>
+                </a>
+           <button id="clicker">DO NOT CLICK THIS BUTTON</button>
+       
         <br>
         <h2 class = "class" id="1">Recipe #1</h2>
         <img id = "pizza" src = "https://www.clipartmax.com/png/middle/0-2331_pizza-clip-art-pizza-images-for-teachers-educators-pizza-slice-clip-art.png">
@@ -224,5 +230,16 @@
             <br>
             <br>
         </div>
+        <script>
+            var clickerButton = document.getElementById("clicker");
+    var onButtonClick = function() {
+        if(clickerButton.textContent == "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"){
+            clickerButton.textContent = "DO NOT CLICK ANYMORE";
+        }else{
+            clickerButton.textContent = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        }
+    };
+    clickerButton.addEventListener("click", onButtonClick);
+        </script>
     </body>
 </html>
