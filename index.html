@@ -1,245 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Project: Recipe book</title>
+        <title>Project: Clicks Per Second Test</title>
         <meta charset="utf-8">
         <style>
-        #disclaimer{
-            color: black;
-            position:fixed;
-            bottom:0;
-            right:20px;
-            font-size:0.85em;
-            text-align: center;
+            #Clicker{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+                width: 42%;
+            }
+            #ClickText{
+                text-align: center;
+                top: 50%;
+                bottom: 50%;
+                color: black;
+                font-family: Sans-serif;
+                font-size: 8%;
+            }
+            #Title{
+                text-align: center;
+                top: 5%;
+                color: black;
+                font-family: Sans-serif;
             }    
-        #pizza{
-            display: block;
-            border: 20px ridge saddlebrown;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 20%;
-            }
-       #chips{
-            display: block;
-            border: 20px ridge saddlebrown;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 20%;
-       }    
-       #wine{
-           display: block;
-            border: 20px ridge saddlebrown;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 20%;
-       }    
-       #color {
-            background: #fff0cc;
-        }
-        
-        .class {
-            text-align: center;
-        }
-        p{
-        color: #996515;
-        font-size: 1.3em;
-        }
-        h1{
-            color: green;
-            font-size:2em;
-            line-height:3;
-            border-bottom: 2px double green;
-        }
-        h2{
-            color: darkred;
-            font-size: 1.6em;
-        }
-        li{
-            color: #996515;
-            list-style-position: inside;
-            padding-right: 50px;
-            font-size: 1.2em;
-        }
-       
-        table{
-            color: grey;
-            padding-left: 1175px;
-            font-size: 1.2em;
-        }
-        #big-table{
-            padding-left: 1080px;
-            padding-right:1050px;
-            font-size: 1.2em;
-        }
-        #top{
-            position: fixed;
-            top:0;
-        }    
-        #contents{
-            text-align: left;
-            margin-left: 20px;
-            font-size: 1.6em;
-        }
-        #contents-list{
-            text-align: left;
-            margin-left: 10px;
-            font-size: 1.3em;
-        }
-        .hide{
-            color: Orange;
-            }
-        .hide:hover{
-            color:red;
-            }
-        #button{
-            font-size:1.5em;
-            position: fixed;
-            right:150px;
-            top:390px;
-            background-color: Orange;
-            padding: 5px;
-            color: black;
-            }   
-        #button:hover{
-            background-color:red;
-            font-size: 1.6em;
-            top:385px;
-            right:145px;
-            }    
-        #button:active{
-           font-size: 0px;
-           
-            }
-            #clicker{
-                position: fixed;
-                left: 350px;
-                top: 366px;
+            #Description{
+                text-align: center;
+                color: black;
+                font-family: serif;
             }    
         </style>
     </head>
-    <body>
-        <div id = "color">
-       <div id = "top">
-        <h1 class = "class">Richard Li's Recipe Book</h1>
-        <h2 class = "class" id = "contents">Contents:</h2>
-        
-        <ol class = "class" id = "contents-list">
-            <li><a href="#1">Recipe #1</a></li>
-            <li><a href="#2">Recipe #2</a></li>
-            <li><a href="#3">Recipe #3</a></li>
-        </ol>
-        
-            </div>
-            <a href="#" onClick="return false;" class = "class" id = "button">
-            <span class = "hide">WWW</span>&lt;Fake Button&gt;<span class = "hide">WWW</span>
-                </a>
-           <button id="clicker">DO NOT CLICK THIS BUTTON</button>
-       
-        <br>
-        <h2 class = "class" id="1">Recipe #1</h2>
-        <img id = "pizza" src = "https://www.clipartmax.com/png/middle/0-2331_pizza-clip-art-pizza-images-for-teachers-educators-pizza-slice-clip-art.png">
-        <ul class = "class">
-            <li>Time: 25 minutes</li>
-            <li>Serves: 1</li>
-        </ul>
-        
-        <table class = "class">
-            <thead>
-                <tr>
-                    <th>Ingredients</th>
-                    <th>Quantity</th>
-                </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <td>Leftover pizza</td>
-            <td>1</td>
-            </tr>
-            <tr><td>Oven</td><td>1</tr>
-            
-                <td>
-            </td>    
-            
-            </tbody>
-        </table>
-        
-        <p class = "class"><strong>Step 1:</strong> Preheat 10 minutes.</p>
-        <p class = "class"><strong>Step 2:</strong> Add leftover pizza and continue heating for 15 minutes.
-</p>
-        <br>
-        <h2  class = "class" id="2">Recipe #2</h2>
-        <img id = "chips" src = "https://previews.123rf.com/images/anatolir/anatolir1902/anatolir190200547/125305050-bowl-of-chips-icon-realistic-illustration-of-bowl-of-chips-vector-icon-for-web-design-isolated-on-wh.jpg">
-        <ul class = "class">
-            <li>Time: 10 seconds</li>
-            <li>Serves: 1</li>
-        </ul>
-        
-        <table class = "class">
-            <thead>
-                <tr>
-                    <th>Ingredients</th>
-                    <th>Quantity</th>
-                </tr>
-            </thead>
-            <tbody>
-            <td>Bag of chips</td>
-            <td>1</td>
-            <tr><td>Bowl (optional)</td><td>1</tr>
-            
-            </tbody>
-        </table>
-        
-        <p class = "class"><strong>Step 1:</strong> Open bag</p>
-        <p class = "class"><strong>Step 2:</strong> Pour into bowl (optional)</p>
-        
-    <br>
-        <h2 id="3" class = "class">Recipe #3</h2>
-        <img id = "wine" src = "https://toppng.com/uploads/preview/wine-bottle-11532767552ei5jy6txvr.png">
-        <ul class = "class">
-            <li>Time: 48 years</li>
-            <li>Serves: 1</li>
-        </ul>
-        
-        <table class = "class" id = "big-table">
-            <thead>
-                    <th>Ingredients</th>
-                    <th>Quantity</th>
-            </thead>
-            <tbody>
-            <tr>
-            <td>4 Gallon Barrel</td>
-            <td>1</td></tr>
-            <tr><td>1 Gallon Jug</td><td>3</tr>
-            <tr><td>Tubing, hyderometer, cork, airlocks, and more wine distilling tools</td><td>NaN<td></tr>
-            <tr><td>Grapes, filtered water, yeast, sugar.<td><td>NaN</td></tr> 
-            </tbody>
-        </table>
-        
-        <p class = "class"><strong>Step 1:</strong> Crush grapes put in bucket etc.</p>
-        <p class = "class"><strong>Step 2:</strong> Run into bottles store wine etc. age for 48 years</p>
-            <br>
-            <br>
-            <br>
-            <p id = "disclaimer"> I do not own any images used in this webpage. </p>
-            <br>
-            <br>
-        </div>
+    <body style="background-color:WhiteSmoke;">
+        <h1 id = "Title">CPS Test</h1>
+        <p id = "Description">Click in the box below as fast as you can for 10 seconds. Your highest CPS (Clicks Per Second) during those 10 seconds will be displayed in the end.</p>
+        <img id = "Clicker" src = "http://www.clker.com/cliparts/I/T/P/B/B/b/whitr-glossy-rectangle-button.svg" alt = "Clicker">
+        <h1 id = "ClickText">Click</h1>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>
-            var clickerButton = document.getElementById("clicker");
-    var onButtonClick = function() {
-        if(clickerButton.textContent == "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"){
-            clickerButton.textContent = "DO NOT CLICK ANYMORE";
-        }else{
-            clickerButton.textContent = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-        }
-    };
-    clickerButton.addEventListener("click", onButtonClick);
+        var numClicks = 0;
+    $("#Clicker").on("click", function() {
+        numClicks++;
+    });
+    $("#Clicker").on("contextmenu",function(){
+        numClicks++;
+        return false;
+    }); 
+    //"#results").text("You clicked " + numClicks + " times");
         </script>
     </body>
 </html>
+
+
