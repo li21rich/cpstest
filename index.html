@@ -63,6 +63,7 @@
                 filter: brightness(90%);
             }
             #Timer{
+                position: fixed;
                 font-family: Sans-serif;
                 font-size: 5em;
                 top: 30%;
@@ -115,6 +116,7 @@
             HighestCPS = numClicks;
             numClicks = 0;
         }   
+        $("#Timer").text(interval);
         if(i >= 10) {
             clearInterval(interval);
         }, 1000);    
