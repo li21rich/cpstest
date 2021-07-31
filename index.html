@@ -19,7 +19,7 @@
                 user-select: none;
             }
             #Clicker:hover{
-                filter: brightness(77%);
+                filter: brightness(86%);
             }    
             #ClickText{
                 text-align: center;
@@ -46,7 +46,13 @@
                 margin-top: 3%;
             }    
             .Dark{
-                filter: brightness(77%);
+                filter: brightness(86%);
+            }
+            .Circle{
+                background: GhostWhite;
+                position: absolute;
+                width: 2%;
+                height: 2%;
             }    
         </style>
     </head>
@@ -60,9 +66,21 @@
         var numClicks = 0;
     $("#Clicker").on("click", function() {
         numClicks++;
+        var $circle = $("<div></div>");
+        $circle.addClass("circle");
+        $circle.css("position", "absolute");
+        $circle.css("top", event.pageY + "px");
+        $circle.css("left", event.pageX + "px");
+        $circle.appendTo("body");
     });
     $("#Clicker").on("contextmenu",function(){
         numClicks++;
+        var $dot = $("<div></div>");
+        $circle.addClass("circle");
+        $circle.css("position", "absolute");
+        $circle.css("top", event.pageY + "px");
+        $circle.css("left", event.pageX + "px");
+        $circle.appendTo("body");
         return false;
     }); 
     $("#ClickText").hover(function() {
