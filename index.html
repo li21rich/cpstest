@@ -63,15 +63,14 @@
         var numClicks = 0;
     $("#Clicker").on("click", function() {
         numClicks++;
-        $("#Clicker").removeClass("Dark");
-        $("#Clicker").addClass("Light");
     });
     $("#Clicker").on("contextmenu",function(){
         numClicks++;
-        $("#Clicker").removeClass("Dark");
-        $("#Clicker").addClass("Light");
         return false;
     }); 
+    $("#Clicker").mousedown(function() {
+        $("#Clicker").toggleClass("Light");
+    });    
     $("#ClickText").hover(function() {
         $("#Clicker").toggleClass("Dark");
     });
