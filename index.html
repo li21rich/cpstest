@@ -63,10 +63,12 @@
         var numClicks = 0;
     $("#Clicker").on("click", function() {
         numClicks++;
+        $("#Clicker").removeClass("Dark");
         $("#Clicker").toggleClass("Light");
     });
     $("#Clicker").on("contextmenu",function(){
         numClicks++;
+        $("#Clicker").removeClass("Dark");
         $("#Clicker").toggleClass("Light");
         return false;
     }); 
