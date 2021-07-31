@@ -19,7 +19,7 @@
                 user-select: none;
             }
             #Clicker:hover{
-                filter: brightness(86%);
+                filter: brightness(88%);
             }    
             #ClickText{
                 text-align: center;
@@ -46,10 +46,10 @@
                 margin-top: 3%;
             }    
             .Dark{
-                filter: brightness(86%);
+                filter: brightness(88%);
             }
             .Light{
-                filter: brightness(114%);
+                filter: brightness(112%);
             }    
         </style>
     </head>
@@ -69,7 +69,10 @@
         return false;
     }); 
     $("#Clicker").mousedown(function() {
-        $("#Clicker").toggleClass("Light");
+        $("#Clicker").addClass("Light");
+    });    
+    $("#Clicker").mouseup(function() {
+        $("#Clicker").removeClass("Light");
     });    
     $("#ClickText").hover(function() {
         $("#Clicker").toggleClass("Dark");
