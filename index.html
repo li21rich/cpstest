@@ -65,9 +65,11 @@
         var numClicks = 0;
     $("#Clicker").on("click", function() {
         numClicks++;
+        $("#ClickText").hide();
     });
     $("#Clicker").on("contextmenu",function(){
         numClicks++;
+        $("#ClickText").hide();
         return false;
     }); 
     $("#Clicker").mousedown(function() {
