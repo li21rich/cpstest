@@ -64,12 +64,12 @@
     $("#Clicker").on("click", function() {
         numClicks++;
         $("#Clicker").removeClass("Dark");
-        $("#Clicker").toggleClass("Light");
+        $("#Clicker").addClass("Light");
     });
     $("#Clicker").on("contextmenu",function(){
         numClicks++;
         $("#Clicker").removeClass("Dark");
-        $("#Clicker").toggleClass("Light");
+        $("#Clicker").addClass("Light");
         return false;
     }); 
     $("#ClickText").hover(function() {
