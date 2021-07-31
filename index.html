@@ -19,7 +19,7 @@
                 user-select: none;
             }
             #Clicker:hover{
-                filter: brightness(75%);
+                filter: brightness(77%);
             }    
             #ClickText{
                 text-align: center;
@@ -45,6 +45,9 @@
                 font-size: 1.7em;
                 margin-top: 3%;
             }    
+            .Dark{
+                filter: brightness(77%);
+            }    
         </style>
     </head>
     <body style="background-color:WhiteSmoke;">
@@ -63,7 +66,7 @@
         return false;
     }); 
     $("#ClickText").hover(function() {
-        $("#Clicker").css("filter", "brightness(75%)");
+        $("#Clicker").toggleClass("Dark");
     });
         </script>
     </body>
