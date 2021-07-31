@@ -48,6 +48,9 @@
             .Dark{
                 filter: brightness(86%);
             }
+            .Light{
+                filter: brightness(114%);
+            }    
         </style>
     </head>
     <body style="background-color:WhiteSmoke;">
@@ -60,9 +63,11 @@
         var numClicks = 0;
     $("#Clicker").on("click", function() {
         numClicks++;
+        $("#Clicker").toggleClass("Light");
     });
     $("#Clicker").on("contextmenu",function(){
         numClicks++;
+        $("#Clicker").toggleClass("Light");
         return false;
     }); 
     $("#ClickText").hover(function() {
