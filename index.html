@@ -93,7 +93,11 @@
     $("#Clicker").on("contextmenu",function(){
         numClicks++;
         $("#ClickText").hide();
+        if(firstClick == false){
+            firstClick = true;
+        }    
         return false;
+        
     }); 
     $("#Clicker").mousedown(function() {
         $("#Clicker").addClass("Light");
@@ -111,7 +115,6 @@
     var i = 0;
     var HighestCPS = -1;
     firstClick = false;
-    
         var timerFunction = function() {
           i++;
           if(numClicks > HighestCPS){
@@ -123,7 +126,7 @@
                 clearInterval(interval);
            }
         }
-        if(firstClick = true){
+        if(firstClick == true){
             interval = setInterval(timerFunction, 1000);
         }
         </script>
