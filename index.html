@@ -87,15 +87,17 @@
         numClicks++;
         if(firstClick == false){
             firstClick = true;
-             $("#ClickText").hide();
-        }    
+            interval = setInterval(timerFunction, 1000);
+        }
+        $("#ClickText").hide();
     });
     $("#Clicker").on("contextmenu",function(){
         numClicks++;
         if(firstClick == false){
             firstClick = true;
-            $("#ClickText").hide();
-        }    
+            interval = setInterval(timerFunction, 1000);
+        }
+        $("#ClickText").hide();  
         return false;
         
     }); 
@@ -114,17 +116,17 @@
     });
     var i = 0;
     var HighestCPS = -1;
-        var timerFunction = function() {
-          i++;
-          if(numClicks > HighestCPS){
-               HighestCPS = numClicks;
-              numClicks = 0;
-           }   
-           $("#Timer").text(interval);
-           if(i >= 10) {
-                clearInterval(interval);
-           }
+    var timerFunction = function() {
+        i++;
+        if(numClicks > HighestCPS){
+           HighestCPS = numClicks;
+           numClicks = 0;
+        }   
+        $("#Timer").text(interval);
+        if(i >= 10) {
+           clearInterval(interval);
         }
+    }
         if(firstClick == true){
             interval = setInterval(timerFunction, 1000);
             console.log(interval);
