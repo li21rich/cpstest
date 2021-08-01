@@ -110,17 +110,19 @@
     });
     var i = 0;
     var HighestCPS = -1;
-    interval = setInterval(function() {
-        i++;
-        if(numClicks > HighestCPS){
-            HighestCPS = numClicks;
-            numClicks = 0;
-        }   
-        $("#Timer").text(interval);
-        if(i >= 10) {
-            clearInterval(interval);
-        }
-    }, 1000);    
+    if(firstClick = true){
+        interval = setInterval(function() {
+            i++;
+          if(numClicks > HighestCPS){
+               HighestCPS = numClicks;
+              numClicks = 0;
+           }   
+           $("#Timer").text(interval);
+           if(i >= 10) {
+                clearInterval(interval);
+           }
+        }, 1000);
+    }
         </script>
     </body>
 </html>
