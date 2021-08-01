@@ -85,25 +85,25 @@
         var firstClick = false;
     $("#Clicker").on("click", function() {
         numClicks++;
-        $("#ClickText").hide();
         if(firstClick == false){
             firstClick = true;
+             $("#ClickText").hide();
         }    
     });
     $("#Clicker").on("contextmenu",function(){
         numClicks++;
-        $("#ClickText").hide();
         if(firstClick == false){
             firstClick = true;
+            $("#ClickText").hide();
         }    
         return false;
         
     }); 
     $("#Clicker").mousedown(function() {
         $("#Clicker").addClass("Light");
-        $("#ClickText").hide();
         if(firstClick == false){
             firstClick = true;
+            $("#ClickText").hide();
         }    
     });    
     $("#Clicker").mouseup(function() {
