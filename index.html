@@ -114,21 +114,25 @@
     });
     var i = 0;
     var HighestCPS = -1;
-        var timerFunction = function() {
-          i++;
-          if(numClicks > HighestCPS){
-               HighestCPS = numClicks;
-              numClicks = 0;
-           }   
-           $("#Timer").text(interval);
-           if(i >= 10) {
-                clearInterval(interval);
-           }
-        }
-        if(firstClick == true){
-            interval = setInterval(timerFunction, 1000);
-            console.log(interval);
-        }
+    var TimerTriggered = false;
+    var timerFunction = function() {
+       i++;
+       if(numClicks > HighestCPS){
+           HighestCPS = numClicks;
+           numClicks = 0;
+       }   
+       $("#Timer").text(interval);
+       if(i >= 10) {
+           clearInterval(interval);
+           TimerTriggered = false;
+       }
+    }
+    while(TimerTriggered == false){
+      if(firstClick == true){
+        TimerTriggered = true;
+        interval = setInterval(timerFunction, 1000);
+      }
+    }
         </script>
     </body>
 </html>
