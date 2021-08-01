@@ -111,8 +111,8 @@
     var i = 0;
     var HighestCPS = -1;
     if(firstClick = true){
-        interval = setInterval(function() {
-            i++;
+        var timerFunction = function() {
+          i++;
           if(numClicks > HighestCPS){
                HighestCPS = numClicks;
               numClicks = 0;
@@ -121,7 +121,8 @@
            if(i >= 10) {
                 clearInterval(interval);
            }
-        }, 1000);
+        }
+        interval = setInterval(timerFunction, 1000);
     }
         </script>
     </body>
