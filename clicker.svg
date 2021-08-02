@@ -1,0 +1,39 @@
+<?xml version="1.0"?><svg width="392.75583" height="273.53708" xmlns="http://www.w3.org/2000/svg">
+ <title>whitr Glossy Rectangle Button</title>
+ <defs>
+  <clipPath id="clipPath3828">
+   <rect width="395.50385" height="138.17282" ry="18.904718" x="-413.25079" y="357.69519" id="rect3830" fill=" rgb(255, 102, 0)"/>
+  </clipPath>
+  <clipPath id="clipPath3824">
+   <rect width="395.50385" height="138.17282" ry="18.904718" x="-413.25079" y="357.69519" id="rect3826" fill=" rgb(255, 102, 0)"/>
+  </clipPath>
+  <clipPath id="clipPath8607">
+   <rect width="395.50385" height="138.17282" ry="18.904718" x="-413.25079" y="357.69519" id="rect8609" fill=" rgb(255, 102, 0)"/>
+  </clipPath>
+  <clipPath id="clipPath8611">
+   <rect width="395.50385" height="138.17282" ry="18.904718" x="-413.25079" y="357.69519" id="rect8613" fill=" rgb(255, 102, 0)"/>
+  </clipPath>
+  <clipPath id="clipPath8713">
+   <rect width="395.50385" height="138.17282" ry="18.904718" x="-413.25079" y="357.69519" id="rect8715" fill=" rgb(255, 102, 0)"/>
+  </clipPath>
+  <clipPath id="clipPath8717">
+   <rect width="395.50385" height="138.17282" ry="18.904718" x="-413.25079" y="357.69519" id="rect8719" fill=" rgb(255, 102, 0)"/>
+  </clipPath>
+  <filter id="filter4311" x="-0.080444" width="1.160887" y="-0.207985" height="1.415971" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="13.416198" id="feGaussianBlur4313"/>
+  </filter>
+  <clipPath clipPathUnits="userSpaceOnUse" id="clipPath4332">
+   <rect width="400.26682" height="154.8131" ry="12.566516" x="-533.35815" y="555.21869" id="rect4334" opacity="0.55"/>
+  </clipPath>
+  <filter id="filter4393" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="7.410068" id="feGaussianBlur4395"/>
+  </filter>
+ </defs>
+ <metadata id="metadata4">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <rect id="rect4391" y="18.370464" x="18.367163" ry="19.220732" height="236.78964" width="356.01581" filter="url(#filter4393)" stroke-width="1.16637" stroke="#000000" fill="#000000" opacity="0.55"/>
+  <rect id="rect4371" y="563.73944" x="-528.24792" ry="12.566516" height="154.8131" width="400.26682" clip-path="url(#clipPath4332)" transform="matrix(0.889444 0 0 1.52952 489.561 -839.367)" filter="url(#filter4311)" stroke-miterlimit="4" stroke-width="44.252201" stroke="#000000" fill="#7f7f7f" opacity="0.716475"/>
+  <rect width="357.0157" height="241.789638" ry="19.220732" x="16.034512" y="8.84728" id="rect4373" stroke-width="1.166372" stroke="#7f7f7f" fill="#ffffff" opacity="0.8"/>
+ </g>
+</svg>
