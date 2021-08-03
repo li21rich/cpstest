@@ -67,7 +67,14 @@
                 font-family: Sans-serif;
                 font-size: 5em;
                 top: 30%;
-                right: 26%;
+                right: 20%;
+            }    
+            #Timer{
+                position: fixed;
+                font-family: Sans-serif;
+                font-size: 5em;
+                top: 60%;
+                right: 20%;
             }    
         </style>
         <link rel="icon"
@@ -79,6 +86,7 @@
         <img id = "Clicker" src = "http://li21rich.me/clicker.svg" alt = "Clicker">
         <h1 id = "ClickText">Click Here</h1>
         <h1 id = "Timer">0</h1>
+        <h1 id = "LiveCPS">0</h1>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>
     var numClicks = 0;
@@ -114,9 +122,9 @@
         i++;
         if(numClicks > HighestCPS){
            HighestCPS = numClicks;
-           numClicks = 0;
         }   
         $("#Timer").text(i);
+        $("#LiveCPS").text(HighestCPS);
         if(i >= 10) {
            clearInterval(interval);
         }
