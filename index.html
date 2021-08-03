@@ -122,7 +122,8 @@
         i++;
         if(numClicks > HighestCPS){
            HighestCPS = numClicks;
-        }   
+        }
+        numClicks = 0;
         $("#Timer").text(i);
         $("#LiveCPS").text(HighestCPS);
         if(i >= 10) {
