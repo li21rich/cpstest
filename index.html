@@ -73,6 +73,13 @@
                 position: fixed;
                 font-family: Sans-serif;
                 font-size: 5em;
+                top: 45%;
+                right: 20%;
+            }    
+            #HCPS{
+                position: fixed;
+                font-family: Sans-serif;
+                font-size: 5em;
                 top: 60%;
                 right: 20%;
             }    
@@ -86,6 +93,7 @@
         <img id = "Clicker" src = "http://li21rich.me/clicker.svg" alt = "Clicker">
         <h1 id = "ClickText">Click Here</h1>
         <h1 id = "Timer">0</h1>
+        <h1 id = "HCPS">0</h1>
         <h1 id = "LiveCPS">0</h1>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>
@@ -93,6 +101,7 @@
     var firstClick = false;
     $("#Clicker").on("click", function() {
         numClicks++;
+        $("#LiveCPS").text(numClicks);
         if(firstClick == false){
             firstClick = true;
             interval = setInterval(timerFunction, 1000);
@@ -100,6 +109,7 @@
     });
     $("#Clicker").on("contextmenu",function(){
         numClicks++;
+        $("#LiveCPS").text(numClicks);
         if(firstClick == false){
             firstClick = true;
             interval = setInterval(timerFunction, 1000);
@@ -125,7 +135,7 @@
         }
         numClicks = 0;
         $("#Timer").text(i);
-        $("#LiveCPS").text(HighestCPS);
+        $("#HCPS").text(HighestCPS);
         if(i >= 10) {
            clearInterval(interval);
         }
