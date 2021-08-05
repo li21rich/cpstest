@@ -146,6 +146,8 @@
         $("#ClickText").hide();
         numClicks++;
         totalClicks++;
+        $("#LiveCPS").text(numClicks);
+        $("#totalClicks").text(totalClicks);
         if(firstClick == false){
             firstClick = true;
             interval = setInterval(timerFunction, 1000);
