@@ -139,6 +139,9 @@
     $("#ClickText").hover(function() {
         $("#Clicker").toggleClass("Dark");
     });
+    $("$ClickText").mousedown(function() {
+        $("#ClickText").hide();
+    });    
     var i = 0;
     var HighestCPS = -1;
     var timerFunction = function() {
