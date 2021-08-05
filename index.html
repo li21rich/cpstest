@@ -62,13 +62,13 @@
             .Dark{
                 filter: brightness(90%);
             }
-            #Timer{
+            /*#Timer{
                 position: fixed;
                 font-family: Sans-serif;
                 font-size: 5em;
                 top: 30%;
                 right: 20%;
-            }    
+            }*/    
             #LiveCPS{
                 position: fixed;
                 font-family: Sans-serif;
@@ -92,7 +92,7 @@
         <p id = "Description">Click in the box below as fast as you can for 10 seconds. Your highest CPS (Clicks Per Second) during those 10 seconds will be displayed in the end.</p>
         <img id = "Clicker" src = "http://li21rich.me/clicker.svg" alt = "Clicker">
         <h1 id = "ClickText">Click Here</h1>
-        <h1 id = "Timer">0</h1>
+        <h1 id = "Timer"></h1>
         <h1 id = "HCPS">0</h1>
         <h1 id = "LiveCPS">0</h1>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -134,11 +134,11 @@
            HighestCPS = numClicks;
         }
         numClicks = 0;
-        $("#Timer").text(i);
+        //$("#Timer").text(i);
         $("#HCPS").text(HighestCPS);
-        if(i >= 10) {
+        /*if(i >= 10) {
            clearInterval(interval);
-        }
+        }*/
     }
         </script>
     </body>
