@@ -112,6 +112,7 @@
         numClicks++;
         totalClicks++;
         $("#LiveCPS").text(numClicks);
+        $("#totalClicks").text(totalClicks);
         if(firstClick == false){
             firstClick = true;
             interval = setInterval(timerFunction, 1000);
@@ -121,6 +122,7 @@
         numClicks++;
         totalClicks++;
         $("#LiveCPS").text(numClicks);
+        $("#totalClicks").text(totalClicks);
         if(firstClick == false){
             firstClick = true;
             interval = setInterval(timerFunction, 1000);
@@ -145,6 +147,7 @@
            HighestCPS = numClicks;
         }
         numClicks = 0;
+        $("#LiveCPS").text(numClicks);
         //$("#Timer").text(i);
         $("#HCPS").text(HighestCPS);
         /*if(i >= 10) {
