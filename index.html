@@ -82,6 +82,13 @@
                 font-size: 5em;
                 top: 60%;
                 right: 20%;
+            }
+            #totalClicks{
+                position: fixed;
+                font-family: Sans-serif;
+                font-size: 5em;
+                top: 30%;
+                right: 20%;
             }    
         </style>
         <link rel="icon"
@@ -95,12 +102,15 @@
         <h1 id = "Timer"></h1>
         <h1 id = "HCPS">0</h1>
         <h1 id = "LiveCPS">0</h1>
+        <h1 id = "totalClicks">0</h1>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>
     var numClicks = 0;
+    var totalClicks = 0;
     var firstClick = false;
     $("#Clicker").on("click", function() {
         numClicks++;
+        totalClicks++;
         $("#LiveCPS").text(numClicks);
         if(firstClick == false){
             firstClick = true;
@@ -109,6 +119,7 @@
     });
     $("#Clicker").on("contextmenu",function(){
         numClicks++;
+        totalClicks++;
         $("#LiveCPS").text(numClicks);
         if(firstClick == false){
             firstClick = true;
