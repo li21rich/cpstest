@@ -25,9 +25,6 @@
                 filter: brightness(90%);
                 cursor: pointer;
             }    
-            #ClickText:hover{
-                cursor: pointer;
-            {    
             #Clicker:active{
                 filter: brightness(103%);
             }    
@@ -46,6 +43,9 @@
                 -webkit-user-select: none;
                 -ms-user-select: none;
             }
+            #ClickText:hover{
+                cursor: pointer;
+            }    
             #Title{
                 text-align: center;
                 top: 10%;
@@ -144,6 +144,12 @@
     });
     $("#ClickText").mousedown(function() {
         $("#ClickText").hide();
+        numClicks++;
+        totalClicks++;
+        if(firstClick == false){
+            firstClick = true;
+            interval = setInterval(timerFunction, 1000);
+        } 
     });    
     var i = 0;
     var HighestCPS = -1;
