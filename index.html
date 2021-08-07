@@ -84,7 +84,7 @@
                 font-family: Sans-serif;
                 font-size: 5em;
                 top: 45%;
-                right: 5%
+                right: 70%
             }    
             #HCPS{
                 position: fixed;
@@ -168,6 +168,7 @@
         if(numClicks > HighestCPS){
            HighestCPS = numClicks;
         }
+        $("#CPS").text(numClicks);
         numClicks = 0;
         $("#LiveCPS").text(numClicks);
         //$("#Timer").text(i);
