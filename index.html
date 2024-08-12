@@ -4,27 +4,24 @@
         <title>Clicks Per Second Test</title>
         <meta charset="utf-8">
         <style>
-            #Clicker{
-                position: relative;
-                width: 100%;
-                user-drag: none;
-                -webkit-user-drag: none;
+            #Title{
+                text-align: center;
+                color: black;
+                font-family: Sans-serif;
+                font-size: 4em;
                 user-select: none;
-                -moz-user-select: none;
-                -webkit-user-select: none;
-                -ms-user-select: none;
-            }
-            #ClickBox{
-                left:55vw;
                 position: relative;
-                width:40vw;
-            }
-            #Clicker:hover{
-                filter: brightness(90%);
-                cursor: pointer;
+                margin: 5px;
             }    
-            #Clicker:active{
-                filter: brightness(103%);
+            #Description{
+                position: relative;
+                text-align: center;
+                color: black;
+                font-family: serif;
+                font-size: 1.7em;
+                user-select: none;
+                margin: 5px;
+                width:60vw;
             }    
             #section{
                 width: 100vw;
@@ -50,26 +47,30 @@
                 margin-left:-11vw;
                 margin-top:-1.55em;
             }
-            #ClickText:hover{
+            #Clicker{
+                position: relative;
+                width: 100%;
+                user-drag: none;
+                -webkit-user-drag: none;
+                user-select: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+            }
+            #ClickBox{
+                left:55vw;
+                position: relative;
+                width:40vw;
+            }
+            #Clicker:hover{
+                filter: brightness(90%);
                 cursor: pointer;
             }    
-            #Title{
-                text-align: center;
-                color: black;
-                font-family: Sans-serif;
-                font-size: 4em;
-                user-select: none;
-                position: relative;
-                margin: 0;
+            #Clicker:active{
+                filter: brightness(103%);
             }    
-            #Description{
-                position: relative;
-                text-align: center;
-                color: black;
-                font-family: serif;
-                font-size: 1.7em;
-                user-select: none;
-                margin: 0;
+            #ClickText:hover{
+                cursor: pointer;
             }    
             .Dark{
                 filter: brightness(90%);
