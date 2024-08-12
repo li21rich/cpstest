@@ -40,7 +40,8 @@
                 display:inline-block;
                 width:40vw;
                 min-width:300px;
-                float:left;
+                float:right;
+                margin-right: 30px;
             }
             #ClickText{
                 text-align: center;
@@ -89,7 +90,7 @@
                 width: 22vw;
                 display: inline-block !important;
                 float: right;
-                margin-right: 20px;
+                margin-right: 50px;
                 margin-left: 0px;
                 font-size:2.5vw;
             }
@@ -160,14 +161,14 @@
             <p id = "Description">Click on the box as fast as you can. Your highest CPS (Clicks Per Second), CPS, and total clicks will be displayed.</p>
         </div>
         <div id = "section">
-            <div id = "ClickBox">
-                <img id = "Clicker" src = "https://li21rich.github.io/cpstest/clicker.svg" alt = "Clicker">
-                <h1 id = "ClickText">Click Here</h1>
-            </div>
             <div class = "stats">
                 <h1 id = "HCPSDesc">Highest CPS: <span id = "HCPS">0</span></h1>
                 <h1 id = "CPSDesc">Current CPS: <span id = "CPS">0</span></h1>
                 <h1 id = "totalClicksDesc">Total Clicks: <span id = "totalClicks">0</span></h1>
+            </div>
+            <div id = "ClickBox">
+                <img id = "Clicker" src = "https://li21rich.github.io/cpstest/clicker.svg" alt = "Clicker">
+                <h1 id = "ClickText">Click Here</h1>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
