@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Clicks Per Second Test</title>
+        <title>Click Speed Test</title>
         <meta charset="utf-8">
         <style>
             #Title{
@@ -15,13 +15,13 @@
             }    
             #Description{
                 position: relative;
-                text-align: center;
                 color: black;
                 font-family: serif;
                 font-size: 1.7em;
                 user-select: none;
                 margin: 5px;
-                width:60vw;
+                width:50vw;
+                left:25vw;
             }    
             #section{
                 width: 100vw;
@@ -38,10 +38,8 @@
                 width: 22vw;
                 font-size:3.1vw;
                 z-index: 2;
-                top:50%;
-                left:50%;
-                margin-left:-11vw;
-                margin-top:-1.55vw;
+                top: calc(50%-11vw);
+                left: calc(50%-1.55vw);
                 color: black;
                 font-family: Sans-serif;
                 user-select: none;
@@ -54,7 +52,7 @@
             }
             #Clicker{
                 position: relative;
-                width: 100%;
+                width: 90%;
                 user-drag: none;
                 -webkit-user-drag: none;
                 user-select: none;
@@ -90,8 +88,8 @@
     </head>
     <body style="background-color:WhiteSmoke;">
         <div>
-            <h1 id = "Title">CPS Test</h1>
-            <p id = "Description">Click in the box below as fast as you can. Your highest CPS (Clicks Per Second), CPS, and total clicks will be displayed on the right.</p>
+            <h1 id = "Title">Simple CPS Test</h1>
+            <p id = "Description">Click on the box as fast as you can. Your highest CPS (Clicks Per Second), CPS, and total clicks will be displayed.</p>
         </div>
         <div id = "section">
             <div id = "ClickBox">
@@ -99,9 +97,9 @@
                 <h1 id = "ClickText">Click Here</h1>
             </div>
             <div class = "stats">
-                <h1 id = "HCPSDesc">HighestCPS: <span id = "HCPS">0</span></h1>
-                <h1 id = "totalClicksDesc">Total: <span id = "totalClicks">0</span></h1>
-                <h1 id = "CPSDesc">CPS: <span id = "CPS">0</span></h1>
+                <h1 id = "HCPSDesc">Highest CPS: <span id = "HCPS">0</span></h1>
+                <h1 id = "CPSDesc">Current CPS: <span id = "CPS">0</span></h1>
+                <h1 id = "totalClicksDesc">Total Clicks: <span id = "totalClicks">0</span></h1>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
