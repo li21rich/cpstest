@@ -26,9 +26,15 @@
             #Clicker:active{
                 filter: brightness(103%);
             }    
+            #section{
+                width: 100vw;
+                position: relative;
+            }
             #ClickText{
                 text-align: center;
-                position: relative;
+                position: absolute;
+                top:50%;
+                left:50%;
                 color: black;
                 font-family: Sans-serif;
                 font-size: 2.5em;
@@ -41,8 +47,6 @@
                 margin: 0;
                 width: 22vw;
                 z-index: 2;
-                margin-top: -15vw;
-                left: 33%;
             }
             #ClickText:hover{
                 cursor: pointer;
@@ -68,31 +72,15 @@
             .Dark{
                 filter: brightness(90%);
             }
-            /*#Timer{
-                position: fixed;
-                font-family: Sans-serif;
-                font-size: 5em;
-                top: 32%;
-                right: 18%;
-            }*/    
-            /*#LiveCPSDesc{
-                position: fixed;
-                font-family: Sans-serif;
-                top: 47%;
-                right: 18%;
-            }*/    
             .stats{
                 position: relative;
                 width: 20vw;
+                display: inline-block;
             }
             #CPSDesc, #HCPSDesc, #totalClicksDesc{
                 position: relative;
                 font-family: Sans-serif;
             }    
-            #section{
-                width: 100vw;
-                position: relative;
-            }
         </style>
         <link rel="icon"
          href="/favicon.ico"type="image/x-icon">
