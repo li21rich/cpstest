@@ -46,6 +46,7 @@
                 font-size: 4em;
                 user-select: none;
                 position: relative;
+                margin: 0;
             }    
             #Description{
                 position: relative;
@@ -54,6 +55,7 @@
                 font-family: serif;
                 font-size: 1.7em;
                 user-select: none;
+                margin: 0;
             }    
             .Dark{
                 filter: brightness(90%);
@@ -74,18 +76,14 @@
             .stats{
                 position: relative;
             }
-            #CPSDesc{
+            #CPSDesc, #HCPSDesc, #TotalClicksDesc{
                 position: relative;
                 font-family: Sans-serif;
             }    
-            #HCPSDesc{
+            #section{
+                width: 100vw;
                 position: relative;
-                font-family: Sans-serif;
             }
-            #totalClicksDesc{
-                position: relative;
-                font-family: Sans-serif;
-            }    
         </style>
         <link rel="icon"
          href="/favicon.ico"type="image/x-icon">
@@ -95,19 +93,19 @@
             <h1 id = "Title">CPS Test</h1>
             <p id = "Description">Click in the box below as fast as you can. Your highest CPS (Clicks Per Second), CPS, and total clicks will be displayed on the right.</p>
         </div>
-        <div>
-            <img id = "Clicker" src = "https://li21rich.github.io/cpstest/clicker.svg" alt = "Clicker">
-            <h1 id = "ClickText">Click Here</h1>
-        </div>
-        //<h1 id = "Timer"></h1>
-        <div class = "stats">
-            <h1 id = "HCPSDesc">HighestCPS: <span id = "HCPS">0</span></h1>
-            <h1 id = "totalClicksDesc">Total: <span id = "totalClicks">0</span></h1>
-            <h1 id = "CPSDesc">CPS: <span id = "CPS">0</span></h1>
+        <div id = "section">
+            <div>
+                <img id = "Clicker" src = "https://li21rich.github.io/cpstest/clicker.svg" alt = "Clicker">
+                <h1 id = "ClickText">Click Here</h1>
+            </div>
+            <div class = "stats">
+                <h1 id = "HCPSDesc">HighestCPS: <span id = "HCPS">0</span></h1>
+                <h1 id = "totalClicksDesc">Total: <span id = "totalClicks">0</span></h1>
+                <h1 id = "CPSDesc">CPS: <span id = "CPS">0</span></h1>
+            </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>
-    //<h1 id = "LiveCPSDesc">Live CPS: <span id = "LiveCPS">0</span></h1>
     var numClicks = 0;
     var totalClicks = 0;
     var firstClick = false;
