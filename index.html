@@ -96,11 +96,34 @@
                 display: inline-block;
                 font-size:3.1vw;
             }    
+            #mobileblocker1, #mobileblocker2 {
+                display: none;
+            }
+            @media only screen and (max-width: 380px) {
+                #mobileblocker1 {
+                    display: block;
+                    position: fixed;
+                    bottom: 0;
+                    width: 100vw;
+                    height: 20wv;
+                    color: black;
+                }
+                #mobileblocker2{
+                    position: absolute;
+                    width: 100%;
+                    text-align: center;
+                    font-family: Sans-serif;
+                    font-color: red;
+                }
+            }    
         </style>
         <link rel="icon"
          href="/favicon.ico"type="image/x-icon">
     </head>
     <body>
+        <div id = "mobileblocker1">
+            <h1 id = "mobileblocker2">WARNING: Mobile devices are not supported</h1>
+        </div>
         <div>
             <h1 id = "Title">Simple CPS Test</h1>
             <p id = "Description">Click on the box as fast as you can. Your highest CPS (Clicks Per Second), CPS, and total clicks will be displayed.</p>
