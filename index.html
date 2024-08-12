@@ -8,11 +8,8 @@
                 display: block;
                 margin-top: auto;
                 margin-bottom: auto;
-                top: 65%;
-                bottom: 35%;
-                left: 30%;
-                right: 30%;
-                width: 38%;
+                position: relative;
+                width: 38vw;
                 user-drag: none;
                 -webkit-user-drag: none;
                 position: absolute;
@@ -30,8 +27,7 @@
             }    
             #ClickText{
                 text-align: center;
-                top: 59.5%;
-                left: 45.5%;
+                position: relative;
                 color: black;
                 font-family: Sans-serif;
                 font-size: 2.5em;
@@ -48,18 +44,20 @@
             }    
             #Title{
                 text-align: center;
-                top: 10%;
+                margin-top: 5em;
                 color: black;
                 font-family: Sans-serif;
                 font-size: 4em;
                 user-select: none;
+                position: relative;
             }    
             #Description{
+                position: relative;
                 text-align: center;
                 color: black;
                 font-family: serif;
                 font-size: 1.7em;
-                margin-top: 3%;
+                margin-top: 5em;
                 user-select: none;
             }    
             .Dark{
@@ -78,38 +76,41 @@
                 top: 47%;
                 right: 18%;
             }*/    
+            .stats{
+                position: relative;
+                margin-right:15%;
+            }
             #CPSDesc{
-                position: fixed;
+                position: relative;
                 font-family: Sans-serif;
-                top: 40%;
-                right: 15%;
             }    
             #HCPSDesc{
-                position: fixed;
+                position: relative;
                 font-family: Sans-serif;
-                top: 45%;
-                right: 15%;
             }
             #totalClicksDesc{
-                position: fixed;
+                position: relative;
                 font-family: Sans-serif;
-                top: 35%;
-                right: 15%;
             }    
         </style>
         <link rel="icon"
          href="/favicon.ico"type="image/x-icon">
     </head>
     <body style="background-color:WhiteSmoke;">
-        <h1 id = "Title">CPS Test</h1>
-        <p id = "Description">Click in the box below as fast as you can. Your highest CPS (Clicks Per Second), CPS, and total clicks will be displayed on the right.</p>
-        <img id = "Clicker" src = "https://li21rich.github.io/cpstest/clicker.svg" alt = "Clicker">
-        <h1 id = "ClickText">Click Here</h1>
-        <h1 id = "Timer"></h1>
-        <h1 id = "HCPSDesc">HighestCPS: <span id = "HCPS">0</span></h1>
-        
-        <h1 id = "totalClicksDesc">Total: <span id = "totalClicks">0</span></h1>
-        <h1 id = "CPSDesc">CPS: <span id = "CPS">0</span></h1>
+        <div>
+            <h1 id = "Title">CPS Test</h1>
+            <p id = "Description">Click in the box below as fast as you can. Your highest CPS (Clicks Per Second), CPS, and total clicks will be displayed on the right.</p>
+        </div>
+        <div>
+            <img id = "Clicker" src = "https://li21rich.github.io/cpstest/clicker.svg" alt = "Clicker">
+            <h1 id = "ClickText">Click Here</h1>
+        </div>
+        /*<h1 id = "Timer"></h1>*/
+        <div class = "stats">
+            <h1 id = "HCPSDesc">HighestCPS: <span id = "HCPS">0</span></h1>
+            <h1 id = "totalClicksDesc">Total: <span id = "totalClicks">0</span></h1>
+            <h1 id = "CPSDesc">CPS: <span id = "CPS">0</span></h1>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>
     //<h1 id = "LiveCPSDesc">Live CPS: <span id = "LiveCPS">0</span></h1>
